@@ -1,0 +1,14 @@
+/* Diagnostic: shows which parts of the edit CSS the site actually applies. */
+html, body { background: transparent !important; }
+
+/* Any controller element -> red outline */
+.controller { outline: 6px solid red !important; }
+
+/* Controller that has the .edit class -> also a big lime glow + blue tint */
+.controller.edit {
+  box-shadow: 0 0 0 14px lime !important;
+  filter: hue-rotate(150deg) !important;
+}
+
+/* left stick -> hot pink block */
+.controller .stick.left { background-color: hotpink !important; outline: 6px solid hotpink !important; }
